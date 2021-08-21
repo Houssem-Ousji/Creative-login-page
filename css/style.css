@@ -213,7 +213,46 @@
 }
 
 
-/* end login page */
+/* end login submit */
+
+
+/* start connect section */
+
+.main .container .connect h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #d3bdaf;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main .container .connect .connect_icons {
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+}
+
+.main .container .connect .connect_icons .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7e4f3f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main .container .connect .connect_icons .icon:hover {
+    transition: .7s;
+    background-color: #d3bdaf;
+    box-shadow: 0 0 20px 0 #0000006b;
+}
+
+.main .container .connect .connect_icons .icon i {
+    color: white;
+}
 
 
 /* end main form section */
