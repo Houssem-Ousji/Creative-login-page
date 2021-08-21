@@ -37,6 +37,31 @@
 /* end container style */
 
 
+/* start navbar */
+
+.navbar {
+    background-color: #d3bdaf;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.navbar h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 25px;
+}
+
+@media (max-width:768px) {
+    .navbar h3 {
+        text-align: center;
+    }
+}
+
+
+/* end navbar */
+
+
 /* start wave section */
 
 .wave img {
