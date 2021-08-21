@@ -209,6 +209,7 @@
 .btn:hover {
     transition: .7s;
     box-shadow: 0 0 20px 0 #0000006b;
+    background-color: #7e4f3f;
 }
 
 
