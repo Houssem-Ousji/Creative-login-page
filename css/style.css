@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+/* start container style */
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* end container style */
+
+
+/* start wave section */
+
+.wave img {
+    max-width: 100%;
+    height: 665px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+@media (max-width:768px) {
+    .wave img {
+        display: none;
+    }
+}
+
+
+/* end wave section */
+
+
+/* start main style */
+
+.main .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 665px;
+    grid-column-gap: 50px;
+}
+
+@media (max-width:768px) {
+    .main .container {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+    }
+}
+
+
+/* end main style */
+
+
+/* start main form section */
+
+.main .container .main_form {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    padding: 10px;
+    color: #999;
+}
+
+.main .container .main_form img {
+    width: 240px;
+    max-width: 100%;
+}
+
+.main .container .main_form h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #d3bdaf;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main .container .main_form .icon {
+    width: 40px;
+    text-align: center;
+}
+
+.main .container .main_form .icon i {
+    font-size: 20px;
+}
+
+#show_hidden {
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+
+/* start username and password section */
+
+.main .container .main_form .username,
+.main .container .main_form .password {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    width: 100%;
+    background: transparent;
+    position: relative;
+    padding: 5px;
+    padding-bottom: 15px;
+    align-items: baseline;
+    border-bottom: 2px solid #9999996b;
+}
+
+.main .container .main_form .password {
+    grid-template-columns: 40px 1fr 40px;
+}
+
+.main .container .main_form .username .username_input input,
+.main .container .main_form .password .password_input input {
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #7e4f3f;
+    padding: 5px;
+}
+
+.main .container .main_form .username .username_input ::placeholder,
+.main .container .main_form .password .password_input ::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #999;
+    text-transform: capitalize;
+}
+
+
+/* end username and password section */
+
+
+/* start forget section */
+
+.forget {
+    width: 100%;
+    text-align: right;
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.forget a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.forget a:hover {
+    color: #7e4f3f;
+}
+
+
+/* end forget section */
+
+
+/* start login section */
+
+.btn {
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: #d3bdaf;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: .7s;
+    box-shadow: 0 0 20px 0 #0000006b;
+}
+
+
+/* end login page */
+
+
+/* end main form section */
+
+
+/* start image section */
+
+.main .container .main_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container .main_image img {
+    width: 600px;
+    max-width: 100%;
+}
+
+@media (max-width:768px) {
+    .main .container .main_image img {
+        display: none;
+    }
+}
