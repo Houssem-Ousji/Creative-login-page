@@ -232,10 +232,10 @@
     padding: 5px;
     border-radius: 50px;
     cursor: pointer;
+    transition: 0.7s;
 }
 
 .btn:hover {
-    transition: .7s;
     box-shadow: 0 0 20px 0 #0000006b;
     background-color: #7e4f3f;
 }
@@ -270,6 +270,7 @@
     background-color: #7e4f3f;
     border-radius: 50%;
     cursor: pointer;
+    transition: .7s;
 }
 
 .main .container .connect .connect_icons .icon:hover {
